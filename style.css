@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+header {
+  background: #05386b;
+  color: #fff;
+  padding: 1.5em 0 1em 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+}
+nav {
+  margin-top: 1em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #379683;
+}
+.hero {
+  background: linear-gradient(90deg, #379683 60%, #5cdb95 100%);
+  color: #fff;
+  text-align: center;
+  padding: 3em 1em 2em 1em;
+}
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5em;
+  background: #05386b;
+  color: #fff;
+  padding: 0.8em 2em;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #379683;
+}
+section {
+  padding: 3em 1em 2em 1em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section h2 {
+  color: #05386b;
+  margin-bottom: 1em;
+}
+#exhibitors ul {
+  padding-left: 1.2em;
+}
+#exhibitors li {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+th, td {
+  padding: 0.7em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.speakers-list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.speaker-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1em;
+  text-align: center;
+  width: 180px;
+}
+.speaker-card img {
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+form {
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 400px;
+  margin: 0 auto;
+}
+form label {
+  display: block;
+  margin: 1em 0 0.3em 0;
+}
+form input, form select {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form button {
+  background: #379683;
+  color: #fff;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #05386b;
+}
+#formMessage {
+  margin-top: 1em;
+  font-weight: 500;
+  color: #379683;
+}
+footer {
+  background: #05386b;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+  font-size: 1em;
+}
+@media (max-width: 700px) {
+  .speakers-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .speaker-card {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+  section {
+    padding: 2em 0.5em;
+  }
+  form {
+    padding: 1em;
+  }
+}
